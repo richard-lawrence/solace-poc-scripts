@@ -11,7 +11,7 @@ export ADMIN_PASS=admin
 
 # URLs should not need change if using default ports
 export SEMP_URL=http://$HOST:8080
-# change if on Mac, port 55555 blocked
+# change to 55556 if on Mac, port 55555 blocked
 export SMF_URL=tcp://$HOST:55555
 export WS_URL=ws://$HOST:8008
 export REST_URL=http://$HOST:9000
