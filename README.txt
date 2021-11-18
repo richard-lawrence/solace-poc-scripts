@@ -25,15 +25,20 @@ Use the setenv.sh script to switch between different broker environments.
 Create new docker PubSub+ container
 ===================================
 
-./install-docker-broker.sh <name> [<image> <tag>]
+Check for PS+ version tags here: https://hub.docker.com/_/solace-pubsub-standard
 
-- Wait couple of mins
+Run the install script: ./install-docker-broker.sh <name> [<image> <tag>]
+E.g:
+
+./install-docker-broker.sh solace-poc solace/solace-pubsub-standard 9.12.0.15
+
+After successful install:
 - Go to http://localhost:8080
+- login as admin/admin
 
 - check CLI working (may need to remove localhost from ~/.ssh/known_hosts):
 
 ./cli-login.sh
-
 
 Setting up TLS/SSL (if required)
 ==================
