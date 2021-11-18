@@ -13,7 +13,7 @@ export SDK_JMS=/Users/rlawrence/solace/sdkperf-jms-8.4.0.17
 export SOL_JCSMP=/Users/rlawrence/solace/sol-jcsmp-10.9.0
 
 # Pickup current env from running setenv.sh
-export SOL_ENV=`cat .env`
+export SOL_ENV=`cat $ROOT_DIR/.env`
 
 # set the default Solace environment
 if [ -z $SOL_ENV ]
